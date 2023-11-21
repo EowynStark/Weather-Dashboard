@@ -1,5 +1,9 @@
+var searchBarEl = document.querySelector('#search-bar')
 
-
+function handleSearchFormSubmit(event){
+    event.preventDefault();
+    
+}
 
 
 
