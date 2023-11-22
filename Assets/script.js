@@ -1,31 +1,35 @@
-var searchBarEl = document.querySelector('#city-search')
+var searchBarEl = document.querySelector('#search-bar');
+var submitBtnEl = document.querySelector('#search-btn');
+var forcastEl = document.querySelector('#forecast-display');
 
-function handleSearchFormSubmit(event){
+function apiSearchRequest(event){
     event.preventDefault();
-    var cityName = document.querySelector('#search-bar').value;
-    if (!cityName){
-        alert('Enter valid city name');
-        return;
-    }
-    // add call to fetch request api function pass it city name input
-}
-
-function apiSearchRequest(cityName){
-    var citySearchUrl = 'api.openweathermap.org/data/2.5/forecast?q=';
+    var apiKey = '51a1f8ff3617888a4b4e6a6b16d5a2d6';
+    var cityName = searchBarEl.value.trim();
+    var citySearchUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName +'&appid=' + apiKey;
     
-    if (cityName){
-        citySearchUrl += cityName + '&appid=51a1f8ff3617888a4b4e6a6b16d5a2d6';
-    }
-    fetch(citySearchUrl)
-        .then(function(response){
+    fetch(citySearchUrl).then(function(response){
             if(!response.ok){
-                throw response.json();
+                throw new Error(response);
             }
             return response.json();
         })
+        .then(function(cityResults){
+            // displayForecast(cityResults);
+            console.log(cityResults);
+        })
+        .catch(function(error){
+            console.error('Error fetching weather information', error);
+            alert('Error retrieving information, please try again later');
+        });
+    
 }
+
+// displayForecast()
 // may need to grab btn element if this doesn't fire
-searchBarEl.addEventListener('click', handleSearchFormSubmit);
+submitBtnEl.addEventListener('click', apiSearchRequest);
+
+
 
 
 
