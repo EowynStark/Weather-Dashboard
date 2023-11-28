@@ -5,7 +5,7 @@ a weather dashboard web application
 This web based application is designed to help a user plan a potential trip based on weather conditions in a city of interest. The user should be able to look up a city and retrieve weather information for that city as it is currently and into the near future. The user should be presented with visual representations of the weather conditions so it is easier for them to recognize as opposed to relying solely on the numerical data given.
 
 ## Authors and Credits
-original source code by <a href="">Andria Jean</a>
+original source code by <a href="https://github.com/EowynStark/Weather-Dashboard">Andria Jean</a>
 
 style code format as provided by <a href="https://getbootstrap.com/">Bootstrap</a>
 
