@@ -15,8 +15,8 @@ Version 1.0 created on Nov. 19, 2023
 
 
 ## Mock-Up
-<a href="#">link to page</a>
-<img src="#">
+<a href="https://eowynstark.github.io/Weather-Dashboard/">link to page</a>
+<img src="./Assets/127.0.0.1_5500_Weather-Dashboard_index.html.png">
 
 ## License
 MIT License
