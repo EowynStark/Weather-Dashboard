@@ -1,0 +1,19 @@
+body {
+    background-color: aquamarine;
+}
+
+
+
+div#forecast-display  div {
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+div#forecast-display  p {
+    font-size: small;
+    text-align: justify;
+    padding-left: 15px;
+    margin-left: 15px;
+}
