@@ -91,6 +91,13 @@ function displayForecast(cityResults){
         // dayThreeDescription.textContent = cityResults[19].weather[0].description;
         // dayFourDescription.textContent = cityResults[27].weather[0].description;
         // dayFiveDescription.textContent = cityResults[35].weather[0].description;
+
+        today.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
+        dayOne.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
+        dayTwo.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
+        dayThree.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
+        dayFour.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
+        dayFive.classList.add('p-3', 'mb-2', 'mw-20', 'bg-info', 'text-dark', 'rounded-1', 'border', 'border-secondary');
         
         forcastEl.appendChild(today);
         today.appendChild(temperatureToday);
